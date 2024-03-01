@@ -1,7 +1,7 @@
 ## TGC Solidity Lesson 1 Activity 1
 
-### My Name: John Doe
+### My Name: Linda
 
-### My Hobby: Programming
+### My Hobby: Reading
 
-### My Goal: To be the best programme in the world
+### My Goal: To be competent in web3
