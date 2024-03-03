@@ -23,7 +23,7 @@ contract Storage {
         uint256 currentTime = block.timestamp; // The current time when the smart contract is deployed
 
         // CODE BLOCK //
-        uint256 unlockTime = currentTime + duration;
+        unlockTime = currentTime + duration;
 
         // END OF CODE BLOCK //
 
@@ -52,11 +52,10 @@ contract Storage {
 
         // CODE BLOCK //
         if (timeNow > unlockTime) {
-            return number: else {
+            return number:
+        } else {
                 return 0;
             }
-        }
-        return number;
 
         // END OF CODE BLOCK //
 
@@ -72,12 +71,15 @@ contract Storage {
      * @return sum of the n number of items in the data array
      */
     function getSum(uint256 n) public view returns (uint8){
+        uint count = 0;
+        uint sum = 0;
         require(n <= 10, "Input should be less than or equal to 10");
+        require(n <> 0, "Input cannot be zero");
         // CODE BLOCK //
-       while (n <=10, )
-        uint8 sum = 0;
-
-
+        while (count < n) {
+            sum = sum + dataArray[count];
+            count++;
+        }
         return sum;
         // END OF CODE BLOCK //
 
