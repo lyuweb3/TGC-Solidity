@@ -52,7 +52,7 @@ contract Storage {
 
         // CODE BLOCK //
         if (timeNow > unlockTime) {
-            return number:
+            return number;
         } else {
                 return 0;
             }
@@ -70,11 +70,11 @@ contract Storage {
      * @param n how many numbers you would like to add up
      * @return sum of the n number of items in the data array
      */
-    function getSum(uint256 n) public view returns (uint8){
-        uint count = 0;
-        uint sum = 0;
+    function getSum(uint256 n) public view returns (uint8) {
+        uint8 count = 0;
+        uint8 sum = 0;
         require(n <= 10, "Input should be less than or equal to 10");
-        require(n <> 0, "Input cannot be zero");
+        require(n != 0, "Input cannot be zero");
         // CODE BLOCK //
         while (count < n) {
             sum = sum + dataArray[count];
