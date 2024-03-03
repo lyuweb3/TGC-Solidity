@@ -17,13 +17,13 @@ contract Storage {
     // 2. Assign the state variable unlockTime to be the addition of currentTime and duration
 
     // CODE BLOCK //
-    constructor() {
+    constructor(uint256 duration) {
     // END OF CODE BLOCK //
 
         uint256 currentTime = block.timestamp; // The current time when the smart contract is deployed
 
         // CODE BLOCK //
-
+        uint256 unlockTime = currentTime + duration;
 
         // END OF CODE BLOCK //
 
@@ -51,7 +51,11 @@ contract Storage {
         uint256 timeNow = block.timestamp; // The current time when the retrieve function is called
 
         // CODE BLOCK //
-
+        if (timeNow > unlockTime) {
+            return number: else {
+                return 0;
+            }
+        }
         return number;
 
         // END OF CODE BLOCK //
@@ -70,6 +74,7 @@ contract Storage {
     function getSum(uint256 n) public view returns (uint8){
         require(n <= 10, "Input should be less than or equal to 10");
         // CODE BLOCK //
+       while (n <=10, )
         uint8 sum = 0;
 
 
